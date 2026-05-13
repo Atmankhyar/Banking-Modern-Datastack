@@ -1,0 +1,17 @@
+{
+  "connector.class": "io.debezium.connector.postgresql.PostgresConnector",
+  "publication.autocreate.mode": "disabled",
+  "database.user": "postgres",
+  "database.dbname": "postgres",
+  "slot.name": "banking_slot",
+  "database.port": "5432",
+  "plugin.name": "pgoutput",
+  "tombstones.on.delete": "false",
+  "topic.prefix": "banking_server",
+  "decimal.handling.mode": "double",
+  "database.hostname": "postgres",
+  "database.password": "atman",
+  "name": "postgres-connector",
+  "table.include.list": "public.customers,public.accounts,public.transactions",
+  "publication.name": "dbz_publication"
+}
