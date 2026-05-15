@@ -5,4 +5,4 @@ FROM apache/airflow:2.9.3
 USER airflow
 
 # Install dbt packages
-RUN pip install --no-cache-dir dbt-core==1.10.2 dbt-snowflake==1.10.2
+RUN pip install --no-cache-dir dbt-snowflake==1.9.8
