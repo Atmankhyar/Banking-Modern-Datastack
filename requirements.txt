@@ -13,4 +13,5 @@ fastparquet
 pandas
 
 #dbt
-dbt-snowflake
+# Pin below 1.11 to avoid dbt parser failures on Snowflake JavaScript macros.
+dbt-snowflake==1.10.2
